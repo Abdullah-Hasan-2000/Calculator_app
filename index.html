@@ -15,42 +15,42 @@
 <div class="parent">
     <h1>Calculator App</h1>
     <div class="Calculator-body">
-        <div class="inputDiv" style="width: 100%;"><input class="Field" type="text" name="" id="inputField"></div>
+        <div class="inputDiv" style="width: 100%;"><input class="Field" type="text" name="" id="inputField" placeholder="0"></div>
         <div class="buttons-div">
             <button class="btns">%</button>
             <button class="btns">CE</button>
-            <button class="btns">C</button>
-            <button class="btns"><i class="fa-solid fa-delete-left"></i></button>
+            <button onclick="clearAll()" class="btns">C</button>
+            <button onclick="clearLastDigit()" class="btns"><i class="fa-solid fa-delete-left"></i></button>
         </div>
         <div class="buttons-div">
-            <button class="btns">1/x</button>
-            <button class="btns">x<sup>2</sup></button>
-            <button class="btns">2<i class="fa-solid fa-square-root-variable"></i></button>
-            <button class="btns">/</i></button>
+            <button onclick="rationalFunction()" class="btns">1/x</button>
+            <button onclick="sqaure()" class="btns">x<sup>2</sup></button>
+            <button onclick="sqaureRoot()" class="btns">2<i class="fa-solid fa-square-root-variable"></i></button>
+            <button onclick="sendSign(this.value)" value="/" class="btns">/</i></button>
         </div>
         <div class="buttons-div">
-            <button class="btns numbers">7</button>
-            <button class="btns numbers">8</button>
-            <button class="btns numbers">9</button>
-            <button class="btns">*</button>
+            <button onclick="sendValue(this)" value="7" class="btns numbers">7</button>
+            <button onclick="sendValue(this)" value="8" class="btns numbers">8</button>
+            <button onclick="sendValue(this)" value="9" class="btns numbers">9</button>
+            <button onclick="sendSign(this.value)" value="*" class="btns">*</button>
         </div>
         <div class="buttons-div">
-            <button class="btns numbers">4</button>
-            <button class="btns numbers">5</button>
-            <button class="btns numbers">6</button>
-            <button class="btns">-</button>
+            <button onclick="sendValue(this)" value="4" class="btns numbers">4</button>
+            <button onclick="sendValue(this)" value="5" class="btns numbers">5</button>
+            <button onclick="sendValue(this)" value="6" class="btns numbers">6</button>
+            <button onclick="sendSign(this.value)" value="-" class="btns">-</button>
         </div>
         <div class="buttons-div">
-            <button class="btns numbers">1</button>
-            <button class="btns numbers">2</button>
-            <button class="btns numbers">3</button>
-            <button class="btns">+</button>
+            <button onclick="sendValue(this)" value="1" class="btns numbers">1</button>
+            <button onclick="sendValue(this)" value="2" class="btns numbers">2</button>
+            <button onclick="sendValue(this)" value="3" class="btns numbers">3</button>
+            <button onclick="sendSign(this.value)" value="+" class="btns">+</button>
         </div>
         <div class="buttons-div">
-            <button class="btns numbers">+/-</button>
-            <button class="btns numbers">0</button>
-            <button class="btns numbers">.</button>
-            <button class="btns" style="background-color: #e876a8; color: black;">=</button>
+            <button onclick="addMinusSign()" class="btns numbers">+/-</button>
+            <button onclick="sendValue(this)" value="0" class="btns numbers">0</button>
+            <button onclick="sendValue(this)" value="." class="btns numbers">.</button>
+            <button onclick="sendValue_2()" class="btns" style="background-color: #e876a8; color: black;">=</button>
         </div>
     </div>
     
