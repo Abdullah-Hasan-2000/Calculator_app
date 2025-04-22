@@ -68,6 +68,8 @@ function sendValue_2() {
         } else if (nextOne[1] === "+") {
             inputFieldData.value = parseFloat(nextOne[0]) + parseFloat(receivingValue);
             count++
+        } else if (nextOne[1] === "%") {
+            inputFieldData = nextOne[0] 
         }
     } else if (count >= 1) {
         console.log(firstTime)
